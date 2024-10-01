@@ -1,22 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../Imagens/vampire.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vlad.css">
     <title>Tabela das Matchups</title>
-</head>
-<body>
-    <table>
-        <caption>Matchups para o Vladmir</caption>
-        <thead>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
 
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
+        caption {
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.534);
+            margin: 20px 0px;
+            border-radius: 20px;
     
+
+        }
+
+        div#rolagem{overflow-x: auto;
+
+} 
+        abbr {
+            text-decoration: none;
+            color: black;
+}
+abbr:hover{color: white;
+
+}
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            height: 40px;
+
+        }
+
+        td:hover {
+            background-color: gray;
+            transition: 1s;
+            text-decoration: underline;
+            color: white;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            margin: auto;
+            margin-bottom: 30px;
+
+
+        }
+
+        caption {
+            font-family: "New Amsterdam", sans-serif;
+            font-size: 2.5em;
+
+        }
+
+        col.mf {
+            background-color: rgb(96, 245, 96);
+
+        }
+
+        col.f {
+            background-color: green;
+        }
+
+        col.m {
+            background-color: yellow;
+
+        }
+
+        col.d {
+            background-color: orange;
+
+        }
+
+        col.md {
+            background-color: red;
+
+        }
+
+        tfoot th {
+            background-color: gray;
+            color: white;
+            font-family: "New Amsterdam", sans-serif;
+            font-size: 1.6em;
+
+
+        }
+        h1.Pagina2{
+        }
+    </style>
+</head>
+
+<body>
+    <div id="rolagem">
+        <table>
+            <colgroup>
+                <col class="mf">
+                <col class="f">
+                <col class="m">
+                <col class="d">
+                <col class="md">
+            </colgroup>
+            <caption>Matchups para o Vladmir</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Muito Fácil</th>
+                    <th scope="col">Fácil</th>
+                    <th scope="col">Médio</th>
+                    <th scope="col">Difícil</th>
+                    <th scope="col">Muito difícil</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                <td><abbr title="a">Singed</abbr></td>
+                <td><abbr title="a">Kayle</abbr></td>
+                <td><abbr title="a">Gragas</abbr></td>
+                <td><abbr title="a">Sylas</abbr></td>
+                <td><abbr title="a">Nasus</abbr></td>
+                </tr>
+                <tr>
+                    <td><abbr title="a">Malphite</abbr></td>
+                    <td><abbr title="a">Kennen</abbr></td>
+                    <td><abbr title="a">Darius</abbr></td>
+                    <td><abbr title="a">Aurora</abbr></td>
+                    <td><abbr title="a">Irelia</abbr></td>
+                </tr>
+                <tr>
+                    <td rowspan="3"><abbr title="a">GP</abbr></td>
+                    <td><abbr title="a">Rumble</abbr></td>
+                    <td><abbr title="a">Jayce</abbr></td>
+                    <td><abbr title="a">Sett</abbr></td>
+                    <td><abbr title="a">Fiora</abbr></td>
+                </tr>
+                <tr>
+                    <td><abbr title="a">Camille</abbr></td>
+                    <td><abbr title="a">Teemo</abbr></td>
+                    <td><abbr title="a">Cho</abbr></td>
+                    <td><abbr title="a">Kled</abbr></td>
+                </tr>
+                <tr>
+                    <td><abbr title="a">jax</abbr></td>
+                    <td><abbr title="a">Urgot</abbr></td>
+                    <td><abbr title="a">Riven</abbr></td>
+                    <td><abbr title="a">Yorick</abbr></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5">Passe o Mouse em cima dos campeões para ter explicações.</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <section>
+        <h1 id="pag2">Para voltar pra outra página: <a href="Página1.html">Clique aqui</a></h1>
+    </section>
+
 </body>
+
 </html>
