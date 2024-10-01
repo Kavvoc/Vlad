@@ -19,15 +19,32 @@
     color: var(--cor0);
 }
 
-a { text-decoration: none; padding: 10px 20px;transition: 0.5s;
+a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+
+}
+
+article a {
+    padding: 1px;
+    text-decoration: underline;
+    border-radius: 0px;
+
+
+}
+
+article a::after {
+    content: '\00A0\1F9DB';
 
 }
 
 a:hover {
     background-color: #C20000;
     color: black;
-    border-radius: 15px;
-    
+
+
 
 }
 
@@ -44,9 +61,15 @@ nav {
     text-align: center;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.733);
-    width: 700px;
+    max-width: 700px;
     margin: auto;
     border-radius: 15px;
+
+}
+
+nav:hover {
+    transition: 1s;
+    color: black;
 
 }
 
@@ -73,13 +96,11 @@ header>h1 {
     padding: 20px;
 }
 
-nav:hover {
-    transition: 1s;
-    color: black;
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
 
 }
-
-main {}
 
 
 article {
@@ -98,6 +119,7 @@ article {
 
 main p {
     padding: 20px;
+    text-indent: 30px;
 
 }
 
@@ -138,6 +160,15 @@ h1 {
     margin: 0px -20px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    font-family: var(--font1);
+    font-size: 1.6em;
+}
+
+h1#diferente {
+    border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+
 }
 
 footer {
@@ -149,6 +180,27 @@ footer {
     margin-top: 50px;
 
 }
-a.foot{padding: 10px;
 
+a.foot {
+    padding: 10px;
+
+}
+
+div.video {
+    background-color: rgba(0, 0, 0, 0.637);
+    position: relative;
+    padding-bottom: 60%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+
+
+}
+
+div.video>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
